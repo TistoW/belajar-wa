@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Merah">#F00000</color>
+    <color name="kuning">#FFEB3B</color>
+    <color name="gray">#C3BFBF</color>
+    <color name="Hijau_sangat_muda">#E0F8E0</color>
+    <color name="Hijau_muda_lembut">#C1F0C1</color>
+    <color name="Hijau_muda">#A2E8A2</color>
+    <color name="Hijau_segar">#83E083</color>
+    <color name="Hijau_standar">#64D864</color>
+    <color name="Hijau_cerah">#45D045</color>
+    <color name="Hijau_sedang">#36A536</color>
+    <color name="Hijau_daun">#2B8C2B</color>
+    <color name="Hijau_gelap">#206420</color>
+    <color name="Hijau_tua">#153C15</color>
+
+</resources>

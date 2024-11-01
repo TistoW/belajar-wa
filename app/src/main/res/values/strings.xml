@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <string name="name">Alam Robeth</string>
+    <string name="title_Chat">Chat</string>
+    <string name="title_Penbaruan">Pembaruan</string>
+    <string name="title_Komunitas">Komunitas</string>
+    <string name="title_WhatsApp">WhatsApp</string>
+    <string name="title_Panggilan">Panggilan</string>
+    <string name="title_Status">Status</string>
+    <string name="title_Saluran">Saluran</string>
+    <string name="title_text_Saluran">Dapatkan berita terbaru tentang topik yang anda minati.
+    Salauran yang Anda ikuti akan ditampilkan di sini.</string>
+    <string name="title_Status_saya">Status saya</string>
+    <string name="title_ketukan_untuk_memperbrui_status">Ketuk untuk memperbrui status</string>
+    <string name="title_Pembaruan_terkini">Pembaruan terkini</string>
+    <string name="title_Pembaruan_yang_dilihat">Pembaruan yang dilihat</string>
+    <string name="title_jelajahi_lainnya">Jelahi lainnya</string>
+    <string name="title_Terbaru">Terbaru</string>
+    <string name="title_Setelan">Setelan</string>
+    <string name="title_favorit">Favorit</string>
+    <string name="title_tambah_favorit">Tambah favorit</string>
+    <string name="Akun">Akun</string>
+    <string name="Privasi">Privasi</string>
+    <string name="Avatar">Avatar</string>
+    <string name="Notifikasi">Notifikasi</string>
+    <string name="Penyimpanan_dan_Data">Penyimpanan dan Data</string>
+    <string name="Bahasa_Aplikasi">Bahasa Aplikasi</string>
+    <string name="Bantuan">Bantuan</string>
+    <string name="Undang_teman">Undang teman</string>
+    <string name="Pembaruan_aplikasi">Pembaruan aplikasi</string>
+    <string name="jika_opsi_ini_dimatikan_anda_tidak_akan_mengirim_atau_menerima_lapoaran_dibaca">Jika opsi ini dimatikan, Anda tidak akan mengirim atau menerima lapoaran dibaca.Laporan dibaca selalu dikirim untuk chat grup.</string>
+    <string name="text_timer_pesan_default">Mulai chat baru dengan pesan sementara yang anda pilih</string>
+    <string name="grub">Grub</string>
+    <string name="semua_orang">Semua orang</string>
+    <string name="lokasi_terkini">Lokasi terkini</string>
+    <string name="text_panggilan">Bisukan penelpon tidak dikenal</string>
+    <string name="kontak_diblokir">Kontak diblokir</string>
+    <string name="kunci_aplikasi">Kunci aplikasi</string>
+    <string name="kunci_chat">Kunci chat</string>
+    <string name="lanjutan">Lanjutan</string>
+    <string name="text_Lanjutan">Lindungi alamat IP dalam panggilan, Nonaktifkan Pratinjau tautan</string>
+    <string name="pemeriksaan_privasi">Pemeriksaan privasi</string>
+
+</resources>

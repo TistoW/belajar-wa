@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation">
+
+    <fragment
+        android:id="@+id/navigation_chat"
+        android:name="com.robeth.whatsapp.ui.chat.ChatFragment"
+        android:label="@string/title_Chat"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_pembaruan"
+        android:name="com.robeth.whatsapp.ui.pembaruan.PembaruanFragment"
+        android:label="@string/title_Penbaruan"
+        tools:layout="@layout/fragment_pembaruan" />
+
+    <fragment
+        android:id="@+id/navigation_komunitas"
+        android:name="com.robeth.whatsapp.ui.komunitas.KomunitasFragment"
+        android:label="@string/title_Komunitas"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_panggilan"
+        android:name="com.robeth.whatsapp.ui.panggilan.PanggilanFragment"
+        android:label="@string/title_Panggilan"
+        tools:layout="@layout/fragment_chat" />
+</navigation>

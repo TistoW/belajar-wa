@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/bar_atas_panggilan"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_Panggilan"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_photo_camera_24"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_search_24"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_more_vert_24"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@id/bar_atas_panggilan"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Merah"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/bar_atas_panggilan"
+        android:layout_above="@+id/bar_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_favorit"
+                    android:textSize="18dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.card.MaterialCardView
+                        android:backgroundTint="@color/Hijau_sedang"
+                        app:cardCornerRadius="30dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/baseline_favorite_border_24"/>
+                    </com.google.android.material.card.MaterialCardView>
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_tambah_favorit"
+                        android:textSize="17dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_Terbaru"
+                    android:textSize="14dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:layout_above="@id/bar_bawah"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Merah"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="20dp"
+        android:layout_above="@+id/bar_bawah"
+        android:layout_alignParentRight="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/Hijau_sedang">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/baseline_add_ic_call_24"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <include
+        layout="@layout/button_bar_bottom"/>
+
+</RelativeLayout>
