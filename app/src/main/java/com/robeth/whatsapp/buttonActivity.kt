@@ -16,9 +16,7 @@ class buttonActivity:AppCompatActivity() {
         val btn4= findViewById<LinearLayout>(R.id.LLpanggilan)
 
         btn1.setOnClickListener{
-            intent = Intent(this, FragmentChatActivity::class.java).also {
-                startActivity(it)
-            }
+
         }
         btn2.setOnClickListener{
             intent = Intent(this, FragmentPembaruanActivity::class.java).also {
