@@ -2,9 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/bar_atas_panggilan"
@@ -35,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_search_24"/>
             <ImageView
+                android:id="@+id/btnSetelan"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_more_vert_24"/>
@@ -51,11 +51,12 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_below="@+id/bar_atas_panggilan"
-        android:layout_above="@+id/bar_bawah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -104,20 +105,29 @@
                     android:textSize="14dp"/>
             </LinearLayout>
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
         </LinearLayout>
+
 
     </androidx.core.widget.NestedScrollView>
 
     <View
-        android:layout_above="@id/bar_bawah"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/Merah"/>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_margin="20dp"
-        android:layout_above="@+id/bar_bawah"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:cardCornerRadius="15dp"
@@ -130,8 +140,5 @@
             android:src="@drawable/baseline_add_ic_call_24"/>
 
     </com.google.android.material.card.MaterialCardView>
-
-    <include
-        layout="@layout/button_bar_bottom"/>
 
 </RelativeLayout>

@@ -2,9 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ChatFragment">
+
 
     <RelativeLayout
         android:id="@+id/bar_atas_chat"
@@ -28,14 +29,17 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/button_camera"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_photo_camera_24"/>
             <ImageView
+                android:id="@+id/button_cari"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_search_24"/>
             <ImageView
+                android:id="@+id/btnSetelan"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_more_vert_24"/>
@@ -46,7 +50,6 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_below="@+id/bar_atas_chat"
-        android:layout_above="@+id/bar_bawah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -137,8 +140,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:itemCount="10"
-                    manger="androidx.recyclerview.widget.LinearLayoutManager"
-                    tools:listitem="@layout/layout_item_chat">
+                    manger="androidx.recyclerview.widget.LinearLayoutManager">
 
                 </androidx.recyclerview.widget.RecyclerView>
 
@@ -185,15 +187,15 @@
         android:background="@color/Merah"/>
 
     <View
-        android:layout_above="@id/bar_bawah"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/Merah"/>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_margin="20dp"
-        android:layout_above="@+id/bar_bawah"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:cardCornerRadius="15dp"
@@ -207,8 +209,5 @@
 
     </com.google.android.material.card.MaterialCardView>
 
-    <include
-        android:id="@+id/bar_bawah"
-        layout="@layout/button_bar_bottom"/>
 
 </RelativeLayout>

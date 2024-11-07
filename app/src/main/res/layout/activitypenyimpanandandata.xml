@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/bar_atas_setelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnKembali"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_west_24"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/Penyimpanan_dan_Data"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:paddingVertical="10dp"
+            android:paddingStart="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_insert_drive_file_24"/>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kelola penyimpanan"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="124,0 MB"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_donut_large_24"/>
+
+            <LinearLayout
+                android:layout_marginStart="70dp"
+                android:paddingVertical="10dp"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Penggunan jaringan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="837,6 MB enter akan mengirim pesan Anda"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginStart="70dp"
+                android:paddingVertical="10dp"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Kurangi  penggunaan data panggilan"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:checked="true"
+                android:theme="@style/Custom.Switch"
+                android:layout_alignParentEnd="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:paddingEnd="25dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginStart="70dp"
+            android:paddingVertical="10dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Proxy"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Mati"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+        <LinearLayout
+            android:paddingVertical="10dp"
+            android:paddingStart="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_vertical"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_insert_drive_file_24"/>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kualitas Media Unggahan"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kualitas standar"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Unduh otomatis media"/>
+
+        <TextView
+            android:paddingStart="15dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Pesan suara selalu diunduh secara otomatid"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_marginStart="70dp"
+            android:paddingVertical="10dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Saat menggunakan data seluler"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Semua media"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="70dp"
+            android:paddingVertical="10dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Saat terhubung ke Wi-Fi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Semua media"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="70dp"
+            android:paddingVertical="10dp"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Saaat roaming"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Tidak ada media"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

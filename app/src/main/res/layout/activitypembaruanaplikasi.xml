@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:id="@+id/bar_atas_setelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnKembali"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_west_24"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Pengaturan pembaruan aplikasi" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/parent1"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="Update aplikasi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Perbarui Otomatis WhatsApp"/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Otomatis mengunduh update aplikasi"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:checked="true"
+            android:theme="@style/Custom.Switch"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleY="1.1"
+            android:scaleX="1.1"
+            android:paddingEnd="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Izin update melalui jaringan mana pun"/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unduh update menggunakan ddata seluler saat WiFi tidak tersedia. Tagihan data mu gkin berlaku."
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:checked="true"
+            android:theme="@style/Custom.Switch"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleY="1.1"
+            android:scaleX="1.1"
+            android:paddingEnd="25dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="@string/Notifikasi"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Pembaruan WhatsApp tersedia"/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dapatkan notifikasi saat pembaruan tersedia "
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:checked="true"
+            android:theme="@style/Custom.Switch"
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:scaleY="1.1"
+            android:scaleX="1.1"
+            android:paddingEnd="25dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

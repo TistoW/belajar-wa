@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/bar_atas_setelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnKembali"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_west_24"/>
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_search_24"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/Undang_teman" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="30dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:padding="10dp"
+                android:background="@color/Hijau_sedang"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/baseline_share_24"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Bagikan tautan"
+            android:textSize="16dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From Contacts"
+        android:textSize="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

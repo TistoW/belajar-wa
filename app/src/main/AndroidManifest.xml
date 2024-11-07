@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,21 +11,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatsApp"
-        tools:targetApi="31">
-
+        tools:targetApi="31" >
         <activity
-            android:name=".buttonActivity"
+            android:name=".ActivitySetelan.Privasi.Activity_status"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySetelan.Privasi.Activity_terakhir_dilihat_dan_online"
+            android:exported="false" />
+        <activity
+            android:name=".ActivitySetelan.Akun.notifikasiKeamananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.robeth.whatsapp.FragmentChatActivity" />
-        <activity android:name="com.robeth.whatsapp.FragmentPembaruanActivity" />
-        <activity android:name="com.robeth.whatsapp.FragmentKomunitasActivity" />
-        <activity android:name="com.robeth.whatsapp.FragmentPanggilanActivity" />
+        <activity android:name=".HomeSetelanActivity" />
+        <activity android:name=".ActivitySetelan.AkunActivity" />
+        <activity android:name=".ActivitySetelan.PrivasiActivity" />
+        <activity android:name=".ActivitySetelan.UndangantemanActivity" />
+        <activity android:name=".ActivitySetelan.PemyimpananDataActivity" />
+        <activity android:name=".ActivitySetelan.PembaruanApilkasiActivity" />
+        <activity android:name=".ActivitySetelan.NotivicationActivity" />
+        <activity android:name=".ActivitySetelan.FavoritActivity" />
+        <activity android:name=".ActivitySetelan.ChatActivity" />
+        <activity android:name=".ActivitySetelan.BaruActivity" />
+        <activity android:name=".ActivitySetelan.BantuanActivity" />
+        <activity android:name=".ActivitySetelan.AvatarActivity" />
+        <activity android:name=".ActivitySetelan.Akun.notifikasi_keamanan" />
+        <activity android:name=".akunActivity" />
+        <activity android:name=".ActivitySetelan.Akun.alamatEmailActivity" />
+        <activity android:name=".ActivitySetelan.Akun.hapusAkunActivity" />
+        <activity android:name=".ActivitySetelan.Akun.gantiNomorActivity" />
+        <activity android:name=".ActivitySetelan.Akun.kunciSandiActivity" />
+        <activity android:name=".ActivitySetelan.Akun.mintaInfoAkunActivity" />
+        <activity android:name=".ActivitySetelan.Akun.verifikasiActivity" />
+        <activity android:name=".ActivitySetelan.ProfilActivity" />
+        <activity android:name=".ActivitySetelan.Privasi.ActivityveriifikasiDuaLangkahBinding" />
+        <activity android:name=".ActivitySetelan.Privasi.Activity_Info" />
+        <activity android:name=".ActivitySetelan.Privasi.Activity_foto_profil" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_grup" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_lokasi_terkini" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_panggilan" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_kontak_diblokir" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_kunci_aplikasi" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_kunci_chat" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_lanjutan" />
+        <activity android:name="com.robeth.whatsapp.ActivitySetelan.Privasi.Activity_pemeriksaan_privasi" />
     </application>
 
 </manifest>

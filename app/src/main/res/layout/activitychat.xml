@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/bar_atas_setelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnKembali"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_west_24"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/title_Chat" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Tampilan"/>
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_brightness_6_24"/>
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tema"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Default sistem"
+                        android:textSize="12dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_photo_24"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wallpaper"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Setelan chat"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginStart="60dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Enter untuk mengirim"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Tombol enter akan mengirim pesan Anda"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:theme="@style/Custom.Switch"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:scaleY="1.5"
+                    android:scaleX="1.5"
+                    android:paddingEnd="25dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginStart="60dp"
+                    android:paddingVertical="10dp"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Visibilitas media"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Tampilan media yang baru terunduh di galeri perangkat Anda"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:checked="true"
+                    android:theme="@style/Custom.Switch"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:scaleY="1.5"
+                    android:scaleX="1.5"
+                    android:paddingEnd="25dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginStart="60dp"
+                android:paddingVertical="10dp"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="ukuran font"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="Kecil"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:paddingStart="15dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Arsip chat"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginStart="60dp"
+                    android:paddingVertical="15dp"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="Tetap arsipkan chat"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="Chat yang diarsipkan akan tetap berada di arsip ketika Anda menerima pesan baru"/>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:theme="@style/Custom.Switch"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:scaleY="1.5"
+                    android:scaleX="1.5"
+                    android:paddingEnd="25dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_filter_drama_24"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cadangan chat"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_mobile_screen_share_24"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Transfer chat"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingVertical="10dp"
+                android:paddingStart="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_history_24"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Riwayat chat"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/bar_atas_setelan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnKembali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:src="@drawable/baseline_west_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/btnKembali"
+            android:text="Hapus akun ini"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_warning_24"
+            android:tint="@color/Merah" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginVertical="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jika Anda menghapus akun ini:"
+                android:textColor="@color/Merah"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-   Akun ini akan dihapus dan semua perangkat Anda"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-   Riwayat pesan Anda akan dihapus"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-   Anda akan dikeluarkan dari semua grup WhatsApp"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-   Cadangan penyimpanan Google Anda akan dihapus"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-   Semua saluran yang Anda buat akan dihapus"
+                android:textSize="12dp" />
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginHorizontal="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_mobile_screen_share_24"
+            android:tint="@color/black" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti nomor saja?"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="55dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Hijau_sedang">
+        <TextView
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ganti nomor"/>
+
+    </androidx.cardview.widget.CardView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginVertical="15dp"
+            android:textSize="12dp"
+            android:text="Untuk menghapus akun Anda, konfirmasi kode negara dan masukkan nomor telepon Anda"/>
+
+        <TextView
+            android:layout_below="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negara"
+            android:textSize="12dp"
+            android:layout_marginStart="55dp"/>
+        <EditText
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="15dp"
+            android:text="Indonesia"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_below="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Negara"
+            android:textSize="12dp"
+            android:layout_marginStart="55dp"/>
+
+        <LinearLayout
+            android:id="@+id/tv4"
+            android:layout_marginStart="55dp"
+            android:layout_below="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_below="@+id/tv2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="+ 62"
+                android:textSize="17dp" />
+
+            <EditText
+                android:layout_below="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="Nomor telepon"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/gray" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/tv4"
+            android:layout_marginStart="55dp"
+            app:cardCornerRadius="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Merah">
+            <TextView
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hapus akun"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>
+

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/setelan">
 
     <RelativeLayout
         android:id="@+id/bar_atas_setelan"
@@ -12,14 +13,14 @@
         android:orientation="horizontal">
         <ImageView
             android:layout_alignParentStart="true"
-            android:id="@+id/kembali"
+            android:id="@+id/btnKembali"
             android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_west_24"/>
         <TextView
             android:layout_centerInParent="true"
-            android:layout_toRightOf="@+id/kembali"
+            android:layout_toRightOf="@+id/btnKembali"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
@@ -50,7 +51,8 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:padding="10dp"
+                android:id="@+id/btnprofil"
+                android:padding="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -83,8 +85,9 @@
                         android:text="@string/app_name"/>
                 </LinearLayout>
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/barcode"
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     app:cardCornerRadius="30dp">
@@ -98,7 +101,7 @@
                 <androidx.cardview.widget.CardView
 
                     android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     app:cardCornerRadius="30dp">
@@ -117,8 +120,9 @@
                 android:background="@color/gray"/>
 
             <LinearLayout
+                android:id="@+id/btnakun"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -154,8 +158,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnPrivasi"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -191,8 +196,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnAvatar"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -228,8 +234,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnFavorit"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -265,8 +272,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnChat"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -302,8 +310,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnNotivikations"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -339,8 +348,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnPenyimpanan_Data"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -377,7 +387,7 @@
 
             <LinearLayout
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -413,8 +423,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnBantuan"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -450,8 +461,9 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnUndangTeman"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -464,26 +476,20 @@
                     android:layout_height="30dp"
                     android:src="@drawable/baseline_komunitas_24"/>
 
-                <LinearLayout
+                <TextView
                     android:layout_gravity="center"
                     android:paddingStart="15dp"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Undang_teman"
-                        android:textSize="15sp"/>
-
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="@string/Undang_teman"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/btnPembaruanAplikasi"
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -496,32 +502,25 @@
                     android:layout_height="30dp"
                     android:src="@drawable/baseline_security_update_good_24"/>
 
-                <LinearLayout
+                <TextView
                     android:layout_gravity="center"
                     android:paddingStart="15dp"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Pembaruan_aplikasi"
-                        android:textSize="15sp"/>
->
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pembaruan_aplikasi"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 
             <TextView
-                android:layout_marginTop="10dp"
+                android:layout_margin="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Juga dari Meta"/>
 
             <LinearLayout
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -534,26 +533,19 @@
                     android:layout_height="30dp"
                     android:src="@drawable/baseline_contact_support_24"/>
 
-                <LinearLayout
+                <TextView
                     android:layout_gravity="center"
                     android:paddingStart="15dp"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Buka Instagram"
-                        android:textSize="15dp"/>
-                    >
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="@string/Undang_teman"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -566,26 +558,19 @@
                     android:layout_height="30dp"
                     android:src="@drawable/baseline_contact_support_24"/>
 
-                <LinearLayout
+                <TextView
                     android:layout_gravity="center"
                     android:paddingStart="15dp"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Buka facebook"
-                        android:textSize="15dp"/>
-                    >
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="@string/Undang_teman"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:paddingVertical="10dp"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -598,20 +583,13 @@
                     android:layout_height="30dp"
                     android:src="@drawable/baseline_contact_support_24"/>
 
-                <LinearLayout
+                <TextView
                     android:layout_gravity="center"
                     android:paddingStart="15dp"
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Buka Threads"
-                        android:textSize="15dp"/>
-                    >
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:text="@string/Undang_teman"
+                    android:textSize="15sp"/>
 
             </LinearLayout>
 

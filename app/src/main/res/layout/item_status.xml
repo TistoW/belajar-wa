@@ -76,33 +76,7 @@
         android:text="@string/title_Pembaruan_terkini"
         android:textSize="12dp"/>
 
-    <RelativeLayout
-        android:id="@+id/bar_atas_setelan"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_alignParentStart="true"
-            android:id="@+id/kembali"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_west_24"/>
-        <TextView
-            android:layout_centerInParent="true"
-            android:layout_toRightOf="@+id/kembali"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="@string/title_Setelan" />
-        <ImageView
-            android:layout_alignParentEnd="true"
-            android:padding="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_search_24"/>
 
-    </RelativeLayout>
     <View
         android:layout_marginHorizontal="10dp"
         android:layout_width="match_parent"

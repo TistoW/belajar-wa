@@ -31,15 +31,72 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_photo_camera_24"/>
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_search_24"/>
-            <ImageView
+                android:id="@+id/btnSetelan"
                 android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/baseline_more_vert_24"/>
 
         </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_below="@+id/bar_atas_komunitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/baseline_qr_code_24"/>
+
+            <TextView
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tetap terhubung dengan komunitas"/>
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas menyatukan anggota dalam grup berdasarkan topik dan memudahkan untuk menerima pengumuman admin. Setiap komunitas yang anda ikuti akan muncul di sini."/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#0246F2"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lihat contoh kounitas  >"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/Hijau_sedang"
+                app:cardCornerRadius="30dp"
+                android:layout_width="350dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai komunitas anda"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 
@@ -50,12 +107,9 @@
         android:background="@color/Merah"/>
 
     <View
-        android:layout_above="@id/bar_bawah"
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/Merah"/>
-
-
-    <include layout="@layout/button_bar_bottom"/>
 
 </RelativeLayout>
