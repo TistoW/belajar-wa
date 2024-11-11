@@ -21,6 +21,7 @@ class PanggilanFragment : Fragment() {
         binding.btnSetelan.setOnClickListener(){
             val intent = Intent(requireActivity(), HomeSetelanActivity::class.java)
             startActivity(intent)
+            mainbutton()
         }
         return binding.root
     }
@@ -28,5 +29,12 @@ class PanggilanFragment : Fragment() {
     override fun onDestroy() {
         _binding = null
         super.onDestroy()
+    }
+    private fun mainbutton() {
+        binding.apply {
+            btnSetelan.setOnClickListener {
+                startActivity(Intent(requireActivity(), HomeSetelanActivity::class.java))
+            }
+        }
     }
 }

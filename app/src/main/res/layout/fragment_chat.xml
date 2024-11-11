@@ -140,6 +140,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     tools:itemCount="10"
+                    tools:itemLayout="@layout/item_status"
+                    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     manger="androidx.recyclerview.widget.LinearLayoutManager">
 
                 </androidx.recyclerview.widget.RecyclerView>

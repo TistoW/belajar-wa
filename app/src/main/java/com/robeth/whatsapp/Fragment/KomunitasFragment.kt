@@ -18,9 +18,10 @@ class KomunitasFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentKomunitasBinding.inflate(inflater, container, false)
-        binding.btnSetelan.setOnClickListener(){
+        binding.btnSetelan.setOnClickListener() {
             val intent = Intent(requireActivity(), HomeSetelanActivity::class.java)
             startActivity(intent)
+            buttonAtas()
         }
         return binding.root
     }
@@ -28,5 +29,14 @@ class KomunitasFragment : Fragment() {
     override fun onDestroy() {
         _binding = null
         super.onDestroy()
+    }
+
+    private fun buttonAtas() {
+        binding.apply {
+
+            btnSetelan.setOnClickListener {
+                startActivity(Intent(requireActivity(), HomeSetelanActivity::class.java))
+            }
+        }
     }
 }
